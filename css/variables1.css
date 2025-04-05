@@ -1,0 +1,11 @@
+:root{
+    --color-1: #fff;
+    --color-2: #ffffff32;
+    --color-3: #109ceb;
+    --color-4: #016d9e;
+}
+
+@font-face {
+    font-family: "Confortaa-Light";
+    src: url(../storage/font/Comfortaa/static/Comfortaa-Light.ttf);
+}

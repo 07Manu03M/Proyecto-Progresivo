@@ -1,0 +1,72 @@
+@import url(variables1.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #109ceb;
+}
+
+/* PRESENTACION */
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+.caja_main {
+    padding: 10px;
+    border-radius: 15px;
+    width: 50%;
+    height: 70svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+}
+.logo_div {
+    background: var(--color-1);
+    display: flex;
+    justify-content: space-evenly;
+    height: 40svh;
+}
+.logo_div img{
+    background: var(--color-1);
+    width: 80svh;
+}
+.div_button{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_button button{
+    background: transparent;
+    width: 20%;
+    height: 6svh;
+    background: var(--color-2);
+    border-radius: 10px;
+    border: #000 1px solid; 
+}
+.div_button button:hover{
+    background: var(--color-4);
+}
+.des_div {
+    background: transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12svh;
+}
+.des_div p{
+    text-align: center;
+    background: transparent;
+    font-family: "Confortaa-Light";
+    font-size: 20px;
+}
+
