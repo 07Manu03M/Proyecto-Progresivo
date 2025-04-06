@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #109ceb;
+    background: var(--color-3);
 }
 
 /* PRESENTACION */
@@ -19,40 +19,43 @@ body{
 .caja_main {
     padding: 10px;
     border-radius: 15px;
-    width: 50%;
-    height: 70svh;
+    width: 55%;
+    height: 75svh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin: 0;
 }
 .logo_div {
-    background: var(--color-1);
+    background: transparent;
     display: flex;
     justify-content: space-evenly;
-    height: 40svh;
+    height: 36svh;
 }
 .logo_div img{
-    background: var(--color-1);
-    width: 80svh;
+    background: transparent;
+    width: 100svh;
 }
 .div_button{
     background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .div_button button{
-    background: transparent;
+    background: var(--color-1);
     width: 20%;
     height: 6svh;
-    background: var(--color-2);
     border-radius: 10px;
-    border: #000 1px solid; 
+    border: none; 
+    color: var(--color-4);
 }
 .div_button button:hover{
     background: var(--color-4);
+    color: var(--color-1);
+    border: none;
 }
 .des_div {
     background: transparent;
@@ -68,5 +71,6 @@ body{
     background: transparent;
     font-family: "Confortaa-Light";
     font-size: 20px;
+    color: var(--color-1);
 }
 
