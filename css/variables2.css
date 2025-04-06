@@ -1,0 +1,9 @@
+:root{
+    --color-barra-lateral: #1da9e6;
+    --color-texto: #000;
+}
+
+@font-face {
+    font-family: "confortaa-light";
+    src: url(../storage/font/Comfortaa/static/Comfortaa-Light.ttf);
+}
