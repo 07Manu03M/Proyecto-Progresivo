@@ -9,15 +9,16 @@
 body{
     height: 100vh;
     width: 100%;
-    background: darkcyan;
+    background: white;
 }
+
 .barra_lateral{
     width: 250px;
     height: 100%;
     overflow: hidden;
     padding: 20px 15px;
     background: var(--color-barra-lateral);
-    transition: width 0.5s ease;
+    transition: width 0.5s ease, background 0.3s ease;
 }
 .mini_barra_lateral{
     width: 90px;
@@ -33,17 +34,21 @@ body{
     font-size: 40px;
     cursor: pointer;
 }
-.barra_lateral .nombre_pagina span{
-    font-size: 22px;
-    margin-left: 5px;
+.barra_lateral span{
+    font-size: 15px;
     opacity: 1;
     white-space: nowrap;
     transition: opacity 0.5s ease, width 0.5s ease;
-    font-family: "confortaa-light";
+    font-family: "confortaa-bold";
 }
-.barra_lateral .nombre_pagina span.oculto{
+.barra_lateral span.oculto{
     opacity: 0;
     width: 0;
+}
+.barra_lateral .nombre_pagina span{
+    margin-left: 5px;
+    font-size: 22px;
+    font-family: "confortaa-light";
 }
 
 
@@ -51,24 +56,141 @@ body{
 
 
 .barra_lateral .navegacion li{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     list-style: none;
     display: flex;
     margin-bottom: 25px;
 }
 
 .barra_lateral .navegacion a{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    text-decoration: none;
+    border-radius: 10px;
+    color: var(--color-texto);
+}
+.barra_lateral .navegacion a:hover{
+    background: var(--color-botones);
+    color: var(--color-blanco);
+}
+.barra_lateral .navegacion img{
+    /* border: 2px solid red; */
+    max-width: 40px;
+    width: 100px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+.barra_lateral .linea{
+    width: 100%;
+    height: 1px;
+    background: var(--color-botones-1);
+    margin-bottom: 20px;
+}
+
+/* MODO OSCURO */
+.barra_lateral .modo_oscuro{
+    /* border: 2px solid red; */
+    width: 95%;
+    border-radius: 10px;
+    margin-left: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.barra_lateral .modo_oscuro .info{
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 10%;
+    width: 150px;
+    overflow: hidden;
     height: 45px;
     display: flex;
     align-items: center;
-    text-decoration: none;
-    border-radius: 10px;
-    background: var(--color-barra-lateral);
     color: var(--color-texto);
 }
-.barra_lateral .navegacion img{
-    width: 50px;
+
+.barra_lateral .modo_oscuro img{
+    /* border: 2px solid blue; */
+    width: 40px;
     font-size: 20px;
+    transition: width 0.5s ease;
+}
+
+/* switch */
+.barra_lateral .modo_oscuro .switch{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    height: 45px;
+    cursor: pointer;
+}
+.mini_barra_lateral .modo_oscuro .switch{
+    margin-right: 10px;
+}
+
+.barra_lateral .modo_oscuro .base{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 35px;
+    height: 20px;
+    background: var(--bolita);
+    border-radius: 50px;
+}
+.barra_lateral .modo_oscuro .circulo{
+    position: absolute;
+    width: 18px;
+    height: 90%;
+    background: var(--fondo-barra);
+    border-radius: 50%;
+    left: 2px;
+    transition: left 0.5s ease;
+}
+
+.barra_lateral .modo_oscuro .circulo.prendido{
+    left: 15px;
+}
+.mini_barra_lateral .modo_oscuro .info img{
+    width: 0;
+}
+
+/* GO BACK */
+
+.barra_lateral .devolver{
+    height: 60px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    gap: 6%;
+    text-decoration: none;
+    margin-top: 100px;
+}
+
+.barra_lateral .devolver img{
+    width: 50px;
+    min-width: 50px;
+    margin-left: 5px;
+}
+.barra_lateral .devolver .text{
+    /* border: 2px solid black; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--color-texto);
+    overflow: hidden;
+}
+
+.barra_lateral .devolver:hover{
+    background: var(--color-botones);
+}
+.barra_lateral .devolver .text:hover{
+    color: var(--color-blanco);
 }
