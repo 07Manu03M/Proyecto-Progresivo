@@ -237,16 +237,63 @@ header{
     border-radius: 20px;
     border: 1px var(--color-botones) solid;
     padding: 10px;
+    outline: none; 
 }
 .buscador input::placeholder{
     padding: 1px;
 }
 /* main */
 main{
-    margin-left: 230px;
+    margin-left: 250px;
     padding: 20px;
+    transition: margin-left 0.5s ease;
 }
 main.min-main{
-    margin-left: 70px;
+    margin-left: 90px;
 }
+.caja_main{
+    background: sandybrown;
+    height: 838px;
+}
+.nolose{
+    background: slateblue;
+    height: 500px;
+    display: flex;
+}
+.tu_dimelo {
+    background: blueviolet;
+    padding: 5px;
+    display: flex;
+}
+.tu_dimelo {
+    background: red;
+}
+.tu_dimelo_1 {
+    background: blue;
+}
+.tu_dimelo_2 {
+    background: green;
+}
+.tu_dimelo_3 {
+    background: yellow;
+}
+.tu_dimelo_4 {
+    background: sienna;
+}
+.tu_dimelo_5 {
+    background: hotpink;
+}
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
 
