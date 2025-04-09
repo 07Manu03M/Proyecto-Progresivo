@@ -252,48 +252,48 @@ main.min-main{
     margin-left: 90px;
 }
 .caja_main{
-    background: sandybrown;
-    height: 838px;
-}
-.nolose{
-    background: slateblue;
-    height: 500px;
-    display: flex;
-}
-.tu_dimelo {
-    background: blueviolet;
-    padding: 5px;
-    display: flex;
-}
-.tu_dimelo {
-    background: red;
-}
-.tu_dimelo_1 {
-    background: blue;
-}
-.tu_dimelo_2 {
-    background: green;
-}
-.tu_dimelo_3 {
-    background: yellow;
-}
-.tu_dimelo_4 {
-    background: sienna;
-}
-.tu_dimelo_5 {
-    background: hotpink;
+    /* background: sandybrown; */
+    height: 710px;
 }
 
-
-@keyframes appear{
-    from{
-        opacity: 0;
-        scale: 0.5;
-    }
-    to{
-        opacity: 1;
-        scale: 1;
-    }
-}
+.fade-up {
+    /* background: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    will-change: opacity, transform;
+  }
+  .fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+    /* transition: opacity 0.1s ease-in, transform 0.7s ease-in; */
+  }
+  .fade-up h1{
+    /* background: blue; */
+    width: 80%;
+    display: flex;
+    text-align: center;
+    font-size: 100px;
+    font-family: "confortaa-light";
+  }
+  .totoro{
+    /* background: yellow; */
+    width: 500px;
+  }
+  .totoro img{
+    /* background: yellow; */
+    max-width: 350px;
+  }
+  
+  /* Se activa cuando aparece en pantalla */
+  .fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 

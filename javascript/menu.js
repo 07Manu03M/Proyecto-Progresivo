@@ -20,4 +20,20 @@ palanca.addEventListener("click",()=>{
     let body = document.body;
     body.classList.toggle("pink_mode")
     circulo.classList.toggle("prendido");
-})
+});
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const el = entry.target;
+      if (entry.isIntersecting) {
+        el.classList.add("show");
+      } else {
+        el.classList.remove("show");
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+  
+  document.querySelectorAll(".fade-up").forEach((el) => observer.observe(el));
