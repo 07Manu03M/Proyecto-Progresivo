@@ -266,9 +266,97 @@ main.min-main {
     left: 10%;
     text-align: center;
     width: 1200px;
-    font-size: 50px;
+    font-size: 45px;
     font-family: "confortaa-bold";
 }
+
+.article_caja {
+    /* background: red; */
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+}
+.figure_caja {
+    /* background: blue; */
+    padding: 15px;
+}
+.queesghibli {
+    /* background: rebeccapurple; */
+    padding: 2px;
+}
+.queesghibli h1{
+    /* background: yellow;     */
+    padding: 2px;
+    font-size: 40px;
+    font-family: "confortaa-bold";
+}
+.descripcion{
+    /* background: violet; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.descripcion p{
+    /* background: green; */
+    font-size: 24px;
+    width: 60%;
+    font-family: "confortaa-light";
+}
+.descripcion img{
+    /* background: slateblue; */
+    width: 300px;
+}
+#imagen-tema {
+    transition: opacity 10s ease-in-out;
+    opacity: 1;
+  }
+.Historia{
+    margin-top: 60px;
+    /* background: green; */
+}
+.Historia h1{
+    padding: 2px;
+    font-size: 40px;
+    font-family: "confortaa-bold";
+}
+.Produccion {
+    /* background: red; */
+    padding: 15px;
+}
+main .Produccion p{
+    margin: auto;
+    /* background: blue; */
+    font-size: 24px;
+    width: 90%;
+    font-family: "confortaa-light";
+}
+.Creadores {
+    margin-top: 40px;
+    /* background: skyblue; */
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.creador_1 p{
+    padding: 5px;
+}
+.creador_1 img{
+    width: 240px;
+}
+.Creador_2 p{
+    padding: 5px;
+}
+.Creador_2 img{
+    width: 229px;
+}
+.Creador_3 p{
+    padding: 5px;
+}
+.Creador_3 img{
+    width: 200px;
+}
+
+
 
 
 

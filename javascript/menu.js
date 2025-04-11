@@ -20,20 +20,17 @@ palanca.addEventListener("click",()=>{
     let body = document.body;
     body.classList.toggle("pink_mode")
     circulo.classList.toggle("prendido");
+
+    const imagenTema = document.getElementById("imagen-tema");
+    const esModoRosa = body.classList.contains("pink_mode");
+
+    imagenTema.style.opacity = 0;
+
+    setTimeout(() => {
+        imagenTema.src = esModoRosa ? "../storage/img/totorosa.png" : "../storage/img/totoro.png";
+
+        imagenTema.style.opacity = 1;
+    }, 100); 
 });
 
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      const el = entry.target;
-      if (entry.isIntersecting) {
-        el.classList.add("show");
-      } else {
-        el.classList.remove("show");
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
-  
-  document.querySelectorAll(".fade-up").forEach((el) => observer.observe(el));
