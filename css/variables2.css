@@ -1,0 +1,19 @@
+:root{
+    --color-barra-lateral: #1da9e6;
+    --color-texto: #000;
+    --color-botones: #0049a2;
+    --color-botones-1: #0067e58c;
+    --color-blanco: #fff;
+    --fondo-barra: #fff;
+    --bolita: #003e89;
+}
+
+@font-face {
+    font-family: "confortaa-light";
+    src: url(../storage/font/Comfortaa/static/Comfortaa-Light.ttf);
+}
+
+@font-face {
+    font-family: "confortaa-bold";
+    src: url(../storage/font/Comfortaa/static/Comfortaa-Bold.ttf);
+}
